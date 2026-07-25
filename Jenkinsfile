@@ -31,7 +31,7 @@ pipeline{
       steps{
         dir('Employee-Service'){
           withSonarQubeEnv('SonarQube'){
-            bat 'mvnw.cmd clean verify sonar:sonar'
+            bat 'mvnw.cmd clean verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar'
           }
         }
       }
