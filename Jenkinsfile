@@ -14,13 +14,13 @@ pipeline{
     }
     stage('Build Department Service'){
       steps{
-         bat 'dir'
+        bat 'dir'
         bat 'dir Department-Serivce'
       }
     }
     stage('Build Project Service'){
       steps{
-         bat 'dir'
+        bat 'dir'
         bat 'dir Project-Serivce'
         }
       }
