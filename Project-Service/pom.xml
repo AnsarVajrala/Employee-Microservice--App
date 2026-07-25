@@ -29,6 +29,8 @@
 	<properties>
 		<java.version>21</java.version>
 		<spring-cloud.version>2025.1.2</spring-cloud.version>
+		<sonar.projectKey>project-service</sonar.projectKey>
+		<sonar.projectName>Project-Service</sonar.projectName>
 	</properties>
 	<dependencies>
 		<dependency>
