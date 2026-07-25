@@ -8,21 +8,21 @@ pipeline{
     }
     stage('Build Employee Service'){
       steps{
-        dir('Employee-serivce'){
+        dir('Employee-Serivce'){
           bat 'mvn clean install'
         }
       }
     }
     stage('Build Department Service'){
       steps{
-        dir('Department-serivce'){
+        dir('Department-Serivce'){
           bat 'mvn clean install'
         }
       }
     }
     stage('Build Project Service'){
       steps{
-        dir('Project-serivce'){
+        dir('Project-Serivce'){
           bat 'mvn clean install'
         }
       }
