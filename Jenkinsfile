@@ -8,20 +8,23 @@ pipeline{
     }
     stage('Build Employee Service'){
       steps{
-        bat 'dir'
-        bat 'dir Employee-Service'
+        dir('Employee-Service'){
+          bat 'mvnw.cmd clean install'
+        }
       }
     }
     stage('Build Department Service'){
       steps{
-        bat 'dir'
-        bat 'dir Department-Serivce'
+        dir('Department-Service'){
+          bat 'mvnw.cmd clean install'
+        }
       }
     }
     stage('Build Project Service'){
       steps{
-        bat 'dir'
-        bat 'dir Project-Serivce'
+        dir('Project-Service'){
+          bat 'mvnw.cmd clean install'
+        }
       }
     }
   }
