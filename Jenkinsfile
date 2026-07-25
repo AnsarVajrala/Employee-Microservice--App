@@ -22,16 +22,15 @@ pipeline{
       steps{
         bat 'dir'
         bat 'dir Project-Serivce'
-        }
       }
     }
   }
 }
-    post {
-      success{
-        echo 'Build Successful'
-      }
-      failure {
-        echo 'Build failed'
-      }
-    }
+post {
+  success{
+    echo 'Build Successful'
+  }
+  failure {
+    echo 'Build failed'
+  }
+}
