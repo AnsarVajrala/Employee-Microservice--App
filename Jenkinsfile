@@ -28,12 +28,12 @@ pipeline{
       }
     }
   }
-}
-post {
-  success{
-    echo 'Build Successful'
-  }
-  failure {
-    echo 'Build failed'
+  post {
+    success{
+      echo 'Build Successful'
+    }
+    failure {
+      echo 'Build failed'
+    }
   }
 }
