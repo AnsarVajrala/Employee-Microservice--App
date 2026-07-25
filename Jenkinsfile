@@ -27,6 +27,14 @@ pipeline{
         }
       }
     }
+    stage('SonarQube Analysis'){
+      steps{
+        dir('Employee-Service'){
+          withSonarQubeEnv('SonarQube'){
+            bat 'mvnw.cmd clean verify sonar:sonar'
+          }
+        }
+      }
   }
   post {
     success{
