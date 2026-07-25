@@ -27,6 +27,8 @@ pipeline{
         }
       }
     }
+  }
+}
     post {
       success{
         echo 'Build Successful'
@@ -35,5 +37,3 @@ pipeline{
         echo 'Build failed'
       }
     }
-  }
-}
